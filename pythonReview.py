@@ -2,7 +2,7 @@
 def create_youtube_video():
 	title =input("enter a title :")
 	description=input("enter a des:")
-	dict= {"title":title,"description":description,"like":0,"dislikes":0,"comment":{}}
+	dict= {"title":title,"description":description,"like":0,"dislikes":0,"comment":{},"hashtag":[]}
 	return dict
 
 ##key = dict["like"]
@@ -19,6 +19,11 @@ def dislike(dict):
 
 def add_comment(dict,username,comment_text):
 	dict["comment"][username]=comment_text
+	return dict
+
+def add_hashtag():
+	while True:
+        hashtag.append(int(input()))
 	return dict
 
 new_video = create_youtube_video()
